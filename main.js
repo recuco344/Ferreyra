@@ -6,26 +6,15 @@
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.querySelector('.nav-links');
 
+const nav = document.querySelector('.nav');
+
 navToggle?.addEventListener('click', () => {
-  const open = navLinks.style.display === 'flex';
-  navLinks.style.display = open ? 'none' : 'flex';
-  navLinks.style.flexDirection = 'column';
-  navLinks.style.position = 'absolute';
-  navLinks.style.top = '64px';
-  navLinks.style.left = '0';
-  navLinks.style.right = '0';
-  navLinks.style.background = 'rgba(178, 172, 162, 0.97)';
-  navLinks.style.padding = '1.5rem 2.5rem';
-  navLinks.style.gap = '1.25rem';
-  navLinks.style.borderBottom = '1px solid rgba(232,64,10,0.15)';
+  nav.classList.toggle('nav-is-open');
 });
 
-// Close nav on link click (mobile)
 navLinks?.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
-    if (window.innerWidth < 768) {
-      navLinks.style.display = 'none';
-    }
+    nav.classList.remove('nav-is-open');
   });
 });
 
@@ -279,4 +268,3 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll, { passive: true });
- 
