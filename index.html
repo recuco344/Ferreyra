@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferreyra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#inicio" class="nav-logo">
+      <span class="logo-text">FERREYRA</span>
+      <span class="logo-bar"></span>
+    </a>
+    <ul class="nav-links">
+            <li><a href="#blog">Blog</a></li>
+      <li><a href="#fotos">Galería</a></li>
+      <li><a href="#bitacoras">Bitácoras</a></li>
+      <li><a href="#gente">Gente</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grain"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Buenos Aires · desde 2022</div>
+      <h1 class="hero-title">
+        <span class="title-main">FERREYRA</span>
+        <span class="title-underbar"></span>
+      </h1>
+      <p class="hero-sub">Un grupo. Muchas aventuras. Todo documentado acá.</p>
+      <div class="hero-cta">
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section" id="blog">
+    <div class="section-header">
+      <span class="section-tag">03</span>
+      <h2 class="section-title">Blog</h2>
+      <p class="section-desc">Reflexiones, relatos y cosas que vale la pena escribir.</p>
+    </div>
+    <div class="blog-list">
+      <article class="blog-post">
+        <div class="blog-meta">
+          <span class="blog-author">Ferreyra</span>
+          <span class="blog-date">Enero 2025</span>
+        </div>
+        <h3 class="blog-title">Cuarzo Ferreyra: cómo empezó todo</h3>
+        <p class="blog-excerpt">Empezó como una misión al puesto Ferreyra en Córdoba. Al volver nos dimos cuenta de que el camino estaba lleno de cuarzo, así que empezamos a agarrar piedras y piedras hasta que se nos caían los pantalones y las riñoneras no cerraban. Nos dividimos en dos grupos — Seba y Yago, y Cami, Vicen y Feli — lavábamos los cuarzos y verificábamos que fueran reales raspándolos hasta que sacaran chispa. Al día siguiente montamos un puesto en la plaza con telas y papeles con los precios. Otro día hicimos lo mismo en una feria, aunque no vendimos tanto. Al volver de Córdoba, Cami se quedó con el maletín con cuarzos.</p>
+        <a href="#" class="blog-read">Leer →</a>
+      </article>
+      <article class="blog-post">
+        <div class="blog-meta">
+          <span class="blog-author">Ferreyra</span>
+          <span class="blog-date">Próximo</span>
+        </div>
+        <h3 class="blog-title">Próxima entrada</h3>
+        <p class="blog-excerpt">Hay algo en proceso. Acá va a aparecer cuando esté listo.</p>
+        <a href="#" class="blog-read">Pronto →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- GENTE -->
+  <section class="section section-dark" id="gente">
+    <div class="section-header">
+      <span class="section-tag">05</span>
+      <h2 class="section-title">La gente</h2>
+      <p class="section-desc">Nosotros somos Ferreyra, un grupo de amigos que se van de vacaciones.</p>
+    </div>
+    <div class="gente-foto">
+      <img src="grupo foto.jpg" alt="Ferreyra" />
+    </div>
+    <div class="people-grid">
+      <div class="person-card" data-name="Yago" style="cursor:pointer;">
+        <div class="person-avatar"><img src="yago foto.png" alt="Yago" /></div>
+        <div class="person-info">
+          <h3>Yago</h3>
+          <p>Descripción próximamente.</p>
+        </div>
+      </div>
+      <div class="person-card" data-name="Seba" style="cursor:pointer;">
+        <div class="person-avatar"><img src="seba foto.jpg" alt="Seba" /></div>
+        <div class="person-info">
+          <h3>Seba</h3>
+          <p>Descripción próximamente.</p>
+        </div>
+      </div>
+      <div class="person-card" data-name="Cami" style="cursor:pointer;">
+        <div class="person-avatar"><img src="cami foto.jpg" alt="Cami" /></div>
+        <div class="person-info">
+          <h3>Cami</h3>
+          <p>Descripción próximamente.</p>
+        </div>
+      </div>
+      <div class="person-card" data-name="Feli" style="cursor:pointer;">
+        <div class="person-avatar"><img src="feli foto.jpeg" alt="Feli" style="object-position: left center;" /></div>
+        <div class="person-info">
+          <h3>Feli</h3>
+          <p>Descripción próximamente.</p>
+        </div>
+      </div>
+      <div class="person-card" data-name="Vicen" style="cursor:pointer;">
+        <div class="person-avatar"><img src="vicen foto.jpeg" alt="Vicen" style="object-position: 30% center;" /></div>
+        <div class="person-info">
+          <h3>Vicen</h3>
+          <p>Descripción próximamente.</p>
+        </div>
+      </div>
+      <div class="person-card" data-name="Toto" style="cursor:pointer;">
+        <div class="person-avatar"><img src="toto foto.jpeg" alt="Toto" /></div>
+        <div class="person-info">
+          <h3>Toto</h3>
+          <p>Descripción próximamente.</p>
+        </div>
+      </div>
+      <div class="person-card" data-name="Juan" style="cursor:pointer;">
+        <div class="person-avatar"><img src="juan foto.jpeg" alt="Juan" /></div>
+        <div class="person-info">
+          <h3>Juan</h3>
+          <p>Descripción próximamente.</p>
+        </div>
+      </div>
+      <div class="person-card person-extras-card" id="extrasCard" style="cursor:pointer;">
+        <div class="person-avatar">+</div>
+        <div class="person-info">
+          <h3>Otros perfiles</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRAS OVERLAY -->
+  <div class="profile-overlay" id="extrasOverlay">
+    <div class="profile-page">
+      <button class="profile-back" id="extrasBack">← Volver</button>
+      <div class="profile-header">
+        <span class="profile-tag">Ferreyra</span>
+        <h1 class="profile-title">Otros perfiles</h1>
+        <span class="profile-title-bar"></span>
+      </div>
+      <div class="people-grid">
+        <div class="person-card" data-name="Yatel" style="cursor:pointer;">
+          <div class="person-avatar"><img src="yatel foto.png" alt="Yatel" /></div>
+          <div class="person-info">
+            <h3>Yatel</h3>
+            <p>Del Bolsón.</p>
+          </div>
+        </div>
+        <div class="person-card" data-name="Ciro" style="cursor:pointer;">
+          <div class="person-avatar"><img src="ciro foto.png" alt="Ciro" /></div>
+          <div class="person-info">
+            <h3>Ciro</h3>
+            <p>De Mendoza.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOTOS -->
+  <section class="section" id="fotos">
+    <div class="section-header">
+      <span class="section-tag">Galería</span>
+      <h2 class="section-title">Fotos de los viajes</h2>
+      <p class="section-desc">Lo que quedó registrado.</p>
+    </div>
+    <div class="viajes-grid">
+      <div class="viaje-card" data-viaje="cordoba-2023" style="cursor:pointer;">
+        <div class="viaje-card-cover">
+          <img src="cuarzo foto 1.jpg" alt="Córdoba 2023" />
+        </div>
+        <div class="viaje-card-info">
+          <span class="viaje-card-fecha">Jul 2023</span>
+          <h3 class="viaje-card-titulo">Córdoba 2023</h3>
+          <span class="viaje-card-ver">Ver fotos →</span>
+        </div>
+      </div>
+      <div class="viaje-card" data-viaje="arenas-2024" style="cursor:pointer;">
+        <div class="viaje-card-cover">
+          <img src="24-1.jpg" alt="Arenas Verdes 2024" />
+        </div>
+        <div class="viaje-card-info">
+          <span class="viaje-card-fecha">Ene 2024</span>
+          <h3 class="viaje-card-titulo">Arenas Verdes 2024</h3>
+          <span class="viaje-card-ver">Ver fotos →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA OVERLAY -->
+  <div class="profile-overlay" id="galeriaOverlay">
+    <div class="profile-page">
+      <button class="profile-back" id="galeriaBack">← Volver</button>
+      <div class="profile-header">
+        <span class="profile-tag">Galería</span>
+        <h1 class="profile-title" id="galeriaTitulo"></h1>
+        <span class="profile-title-bar"></span>
+      </div>
+      <div class="galeria-grid" id="galeriaGrid"></div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img class="lightbox-img" id="lightboxImg" alt="" />
+  </div>
+
+  <!-- BITÁCORAS -->
+  <section class="section" id="bitacoras">
+    <div class="section-header">
+      <span class="section-tag">04</span>
+      <h2 class="section-title">Bitácoras</h2>
+      <p class="section-desc">Todas las historias de nuestros viajes narradas desde la perspectiva de Cuki.</p>
+    </div>
+    <div class="blog-list">
+
+      <article class="blog-post">
+        <div class="blog-meta">
+          <span class="blog-author">Cuki</span>
+          <span class="blog-date">Julio 2023</span>
+        </div>
+        <h3 class="blog-title">Córdoba 2023</h3>
+        <p class="blog-excerpt">Viernes 21/7/23 — Partió el convoy desde la casa de Paula. Un viaje tranquilo hasta Carcarañá, un perro llamado Gómez, pijamada, fútbol a oscuras y la ruta de las Altas Cumbres. Después: sierras, horno chileno, cuarzos, parkour en el arroyo y el Puesto Ferreyra. La frase del viaje: ¡Esperen, sean humildes!</p>
+        <a href="#cordoba-2023" class="blog-read">Leer →</a>
+      </article>
+
+      <article class="blog-post">
+        <div class="blog-meta">
+          <span class="blog-author">Cuki</span>
+          <span class="blog-date">Enero 2024</span>
+        </div>
+        <h3 class="blog-title">Arenas Verdes 2024</h3>
+        <p class="blog-excerpt">Sábado 27/1/24 — Camping, médanos, tabla de surf, pozos gigantes en la arena, una nube misteriosa, un incendio forestal, tormenta eléctrica y el fogón dentro de un tronco antiguo. La frase del viaje: ¡Tengo hambre!</p>
+        <a href="#arenas-verdes-2024" class="blog-read">Leer →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- BITÁCORA: CÓRDOBA 2023 -->
+  <section class="section bitacora-full" id="cordoba-2023">
+    <div class="bitacora-header">
+      <a href="#bitacoras" class="bitacora-back">← Volver</a>
+      <span class="section-tag">Bitácora · Julio 2023</span>
+      <h2 class="section-title">Córdoba 2023</h2>
+      <p class="bitacora-firma">Por Cuki</p>
+    </div>
+    <div class="bitacora-body">
+      <div class="bitacora-dia">
+        <span class="dia-label">Viernes 21/7/23 · Carcarañá</span>
+        <p>Partió el convoy desde la casa de Paula. En el auto de Romi fuimos Ariel, Yago, Vicente y Paula. En el de Fer, Vane, Seba, Cami, Feli. Un viaje muy tranquilo, sin parar, escuchando y conversando de temas profundos, hasta llegar a Carcarañá. Del otro auto nos reportaron más bien lo contrario: movimientos incesantes.</p>
+        <p>Con el pueblo ya bastante apagado, entramos a una especie de club de campo gigante y desierto, donde habíamos reservado un par de cabañas para pasar la noche. Los pibes se fueron a jugar a la pelota a oscuras. Los grandes, comimos y tomamos vino. Antes de las 12, le cantamos el cumpleaños a Fer. Nos hicimos amigos de un perro que llamamos Gómez.</p>
+        <p>Nos fuimos a dormir bastante tarde, en la habitación grande hubo pijamada = dormirse a cualquier hora. Pero nos despertamos a un buen horario, para desayunar y tomar la ruta de nuevo ya rumbo a Córdoba. Por supuesto, después de un ratito más de fútbol en la cancha.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Sábado 22/7/23</span>
+        <p>Ya llegamos a San Javier, después de un viaje largo, por momentos muy hermoso, por las Altas Cumbres. En ese trayecto, Ariel quiso ver cómo funcionaba con un disco de Martha Argerich. Salvo Vane, los demás durmieron en paz: Seba, Yago, Romi.</p>
+        <p>Era ya de noche cuando conocimos Petrel, un lugar enorme, lleno de caminitos, leña y vegetación. Aun en la obscuridad se descubrió como mágico, con muchos perros y gatitos dando vueltas por ahí. Una vez acomodados, Fer y Ariel fueron a comprar comida a "Lo de Juana": milanesa, bondiola, ensaladas. Comimos todos juntos en la cabaña grande. En la cabaña de al lado, de Fer, Cari y Feli, hubo guitarreada por un rato más.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Domingo 23/7/23</span>
+        <p>Empezó la aventura. Norberto nos sirvió el desayuno de bienvenida: medialunas y tostadas con mermelada de mandarina casera, bien amargura. Con esa energía, los chicos dedicaron a perfeccionarse con las maderas, con el hacha y el machete que trajo Fer. Se armaron incluso una mesa de crafteo. Hicieron lanzas y dagas de todo tipo, bien afiladas, además de cortar leña para alimentar el horno chileno.</p>
+        <p>Ariel y Vane fueron a hacer compras y trajeron los dos pollos que se cocinaron en el horno, con cebollas, zanahorias y calabazas. Después del café partió la expedición por el sendero de la Quebrada de Ambrosio, a lo largo del arroyo. Una caminata hermosa y no sin exigencias: hubo que cruzar varias veces el arroyo saltando por las piedras, algunas resbaladizas. Fue una primera aproximación al parkour de Traslasierra.</p>
+        <p>La caminata terminó en El Pozo, donde se formaba una lagunita interesante. En el retorno quedamos separados en dos grupos. Surgió la competencia de recolección de cosas raras: Seba con un trozo de cuarzo, Vicente con un granito, Cami con un fruto parecido a un coco blando atravesado por una lanza.</p>
+        <p>Después de la cena hicimos una sesión del juego de cartas The Mind. Pasamos de nivel sólo cuando improvisamos iluminar la escena con una linterna dentro de un rollo de cocina. Al final de la noche, Romi nos tiró las cartas de tarot a los grandes.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Lunes 24/7/23</span>
+        <p>Ariel se despertó bien temprano para visitar a Santiago, que vive en San Javier desde hace diez años y montó Chacra Raíz, un complejo de glamping increíble al pie del cerro Champaquí. Fue una conversación fantástica, llena de buena energía.</p>
+        <p>Mientras tanto, en Petrel, Cami no pudo dormir en toda la noche por vómitos y dolor de panza. Se pasó todo el día así y nos quedamos a acompañarlo. El único paseo fue una caminata a la heladería Manteca. Para almorzar: bifes de chorizo con morcillas y chorizos en el horno chileno.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Martes 25/7/23</span>
+        <p>Al mediodía, los chicos amasaron pizzas y las comimos con milanesas de pollo en el horno chileno. Cami revivió: dijo que ya estaba al 60%. A la tarde nos fuimos de mini-excursión al Sendero del Obispo, un lindo caminito que agarramos con la última luz. Algunos mojamos los pies en el agua helada… y Feli se cayó y se empapó. Cami ya estaba al 75%.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Miércoles 26/7/23</span>
+        <p>Excursión inolvidable al Puesto Ferreyra, en el corazón de las sierras. Dejamos el auto después de una buena subida en ripio y arrancamos. Una caminata franca pero exigente, al rayo del sol. Los efectos del cansancio y de la altura se sintieron pronto. Yago fue quien más lo sufrió. Paramos antes de lo previsto para comer los primeros sandwiches de milanesa y, de pronto, la tropa otra vez revitalizada.</p>
+        <p>La vista del valle era alucinante. Vimos vacas y burros, hasta que llegamos a una pampa donde flameaba la bandera argentina, flanqueada por una escultura de una cabra. Se nos acercaron perros, gallinas y pavos. Recogimos crines de caballo y huesos de vaca y oveja. Seguimos hasta el corral de las cabras, donde los chicos entablaron conversación con ellas.</p>
+        <p>En la bajada empezó la recolección de piedras de cuarzo. Surgió la idea de venderlos en una feria. Feli fue el primero en vender: una por $100 a Ariel y otra por $50 a Paula. Paramos en la plaza de San Javier a comer brownies y torta de ricota. Ya en Petrel, se separaron las sociedades del cuarzo: Seba-Vicente, Yago-Cami-Feli. Limpiaron las piedras y elaboraron sus estrategias.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Jueves 27/7/23</span>
+        <p>Nos levantamos todos los varones a las 10 en punto para un partido de fútbol. Después fuimos a la feria de Villa Las Rosas, donde nos encontramos con Yatel y Priscila. Con una tela negra de Fer, los chicos plantaron el negocio de cuarzo en el centro de la plaza. ¡Y vendieron! La recaudación superó los $1000.</p>
+        <p>A la tarde fuimos a Tila Henen, una bahía hermosa, y salimos todos a navegar en kayacs en el momento mágico del atardecer. De vuelta en Petrel, Seba se quemó la mano izquierda al tocar el caño de la salamandra. Lo atendió el Doctor Segundo Muñoz en Villa Dolores, muy tranquilo y afable. Seba se calmó y volvió directo a dormir. Se perdió el guiso de lentejas.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Viernes 28/7/23</span>
+        <p>Último día, para un aterrizaje suave. Por la mañana fuimos al arroyo con Yatel y Seba: parkour, videos en cámara lenta. Pasamos por la Feria de San Javier, donde los niños empresarios siguieron vendiendo cuarzo. Compramos cositas, almorzamos y vimos un espectáculo de magia y títeres.</p>
+        <p>Al atardecer fuimos al Sendero de los Algarrobos, nos mojamos los pies en el arroyo, dibujamos y vimos la luna ya radiante sobre la sierra. Volvimos a Petrel para los fuegos de despedida. Más carne buenísima en el horno chileno y en el fogón quemamos nuestros destinos.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Sábado 29/7/23</span>
+        <p>Llegó el momento de irnos, pero no tan rápido. Saludamos a Norberto y prometimos volver. Nos sacó una foto a todo el grupo que quedará para siempre. En la ruta paramos en distintos lugares a comprar aceite de oliva, medialunas y alfajores. Y en el medio de las Altas Cumbres, la aventura final: para acompañar a Fer en su promesa, nos metimos al agua helada en el Parque Nacional del Río Hueco, con los cóndores sobrevolándonos.</p>
+        <p>Nos volvemos purificados a nuestras vidas en Buenos Aires.</p>
+      </div>
+      <div class="bitacora-frase">
+        <span>Frase del viaje:</span> ¡Esperen, sean humildes!
+      </div>
+    </div>
+  </section>
+
+  <!-- BITÁCORA: ARENAS VERDES 2024 -->
+  <section class="section bitacora-full" id="arenas-verdes-2024">
+    <div class="bitacora-header">
+      <a href="#bitacoras" class="bitacora-back">← Volver</a>
+      <span class="section-tag">Bitácora · Enero 2024</span>
+      <h2 class="section-title">Arenas Verdes 2024</h2>
+      <p class="bitacora-firma">Por Cuki</p>
+    </div>
+    <div class="bitacora-body">
+      <div class="bitacora-dia">
+        <span class="dia-label">Sábado 27/1/24</span>
+        <p>Salimos 8.45 con Romi y Yago en el auto de Romi. Un viaje largo, con tres paradas, sin mayores contratiempos salvo cuando Yago tuvo que ir al baño a vomitar. Llegamos al camping después de un camino de ripio interesante. Lo primero fue estudiar el lugar, ponernos la malla y conocer la playa. Hay que caminar bastante, subir y bajar médanos.</p>
+        <p>El agua: 6 puntos según Seba. Fría, muy cristalina, calma, con la sorpresa de que de tanto en tanto aparece una ola muy franca. Los chicos hicieron una gran pileta con canales en la arena, Yago escribió las iniciales y organizaron una marcha de un funeral. Se sumó Ciro, un amigo mendocino.</p>
+        <p>Comimos las empanadas que teníamos para el viaje y nos fuimos a dormir en los colchones inflables. La noche se fue poniendo fresca, Seba terminó con doble manta.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Domingo 28/1/24</span>
+        <p>Los chicos empezaron a cavar el pozo más profundo que se haya cavado en Arenas Verdes. El almuerzo fue con todos juntos: patys a la parrilla. Después, Papá y Fer cambiaron de lugar las carpas a una parcela más amplia.</p>
+        <p>En la playa encontramos a Thiago y Luna, que habían cuidado el pozo, y emprendimos la segunda fase. Quedamos hasta el atardecer y vimos cómo el sol se escondía en el mar. Maravilloso.</p>
+        <p>En la cueva, con un fuego, Fer contaba historias en voz alta mientras Cami tocaba la guitarra. Hubo un percance importante: Paula Paganini casi se prende fuego al intentar cocinar los fideos. Como le fallaba el magiclick, puso la graduación al máximo y surgió una llamarada enorme. Se quemó un par de dedos, pero no pasó de ampollas.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Lunes 29/1/24</span>
+        <p>Los chicos decidieron ir a buscar palos para construir armas. Volvieron con todo tipo de palos y los trabajaron con el hacha, cuchillos y navajas. Seba: bastón de la abuela. Vicen: lanza y espada. Cami: lanza. Yago: gomera. Toto: cuchillo. Feli: ninguna.</p>
+        <p>A la tarde, viento que lastimaba las pantorrillas y sol demasiado fuerte. Encontramos un médano reparado con bastante sombra. Fer llevó a los chicos al médano gigante para el atardecer: entre siete y diez ascensos y descensos, el momento mágico. Calculamos cuánto tarda el sol en desaparecer: 4 minutos. Y Feli lo interrumpió con un pedo.</p>
+        <p>Toto perdió las dos ojotas, fue un drama. Quedó tendido en el piso llorando en forma de cruz. Pero al rato Fer las recuperó: el alivio de su vida.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Martes 30/1/24</span>
+        <p>Fer bajó la tabla de surf y se clavó sus buenas olas. Cami también la intentó y se paró tres veces. Fue un día de percances mínimos: Toto molesto por las moscas, Seba ofuscado por el hambre, a Papá se le cayó el sandwich, a Feli lo picó una avispa y Vicen le rompió el termo a alguien de un pelotazo.</p>
+        <p>Al mediodía Santi agarró la guitarra y no la soltó, improvisó una canción sobre el campamento con voz de Iorio. A la noche, gran pollo al disco de Santi, Paula Ripesi y Adrián, coronado con flan con dulce de leche y tiramisú.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Miércoles 31/1/24</span>
+        <p>Yago con un poco de fiebre, Santi con una pataleta en el hígado, Feli caído al mediodía. Para la tarde todos bien. Fer llevó la tabla: Cami ya es avezado, se turnaron con Vicen, Seba y Toto.</p>
+        <p>La tarde/noche más mágica del viaje. Una enorme nube blanca emergía de un humo gris. Los grandes totalmente cooptados por el fenómeno: ¿explosión química? ¿incendio? ¿la tormenta eléctrica final? Hasta que los chicos gritaron desde la orilla: "¡Es fuego! ¡Es fuego!" En sentido noreste se alcanzaba a ver la llamarada de un incendio espectacular. En sentido noroeste, una tormenta eléctrica real.</p>
+        <p>Guardamos todo y caminata frenética al camping. Seba estaba realmente angustiado. Se desató la psicosis. Acusaciones, ataques, defensas y llantos. Hasta que Papá emergió: "¡No voy a hacer nada apurado!". Su rugido lo sucedió el silencio.</p>
+        <p>La lluvia llegó de madrugada. Hasta granizó.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Jueves 1/2/24</span>
+        <p>La lluvia nos hizo amanecer tarde. Jugamos al Mind y al Uno, bajamos a almorzar milanesas y hamburguesas a lo de Morita. Salió un lindo día de playa con un gran partido de fútbol entre todos. La figura: Juan, un verdadero bulldog.</p>
+        <p>Asado despedida de Santi, con techito de chapa de Ciro como solución salvadora contra la lluvia. Choris y vacíos en el deck, carne fantástica, conversaciones cruzadas. Saludamos a Santi, Paula, Toto y Juan, que siguieron rumbo a la Patagonia.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Viernes 2/2/24</span>
+        <p>Día nublado, día pachorro. Caminata por la orilla hasta la aldea de los cangrejos, juntamos piedritas en un vaso de yogur. Seba jugó al Uno, Papá llevó la silla a la playa para leer y escuchar el mar.</p>
+        <p>A la tarde paletas, surf, médano con atardecer consumado. Se levantó mucho viento y lluvia. La carpa fue un resguardo seguro. Papá soñó que volvía a la ORT.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Sábado 3/2/24</span>
+        <p>Feli se despertó con vómitos y diarrea. Fer empezó a desarmar para irse a la tarde. Un día de mucho sol y viento, además del cansancio por la semana. Quedarse fresquitos en el camping fue la mejor opción.</p>
+        <p>Con la partida de Fer, Cami, Feli y Rubio, se siguió desarmando con cierta naturalidad. La última cena de quienes nos quedamos fue asado. Los grandes liquidamos las dos botellas de vino que quedaban, hablando de felicidades, miedos, expectativas y ansiedades para el futuro.</p>
+      </div>
+      <div class="bitacora-dia">
+        <span class="dia-label">Domingo 4/2/24</span>
+        <p>Fue extraño despertarse sin la carpa naranja al lado, y sin Rubio custodiando la parcela. Gran desayuno juntos, con repartija de medialunas. Nos despedimos del camping con un cafecito en la placita del enfrente. Hacia la ruta con máxima felicidad.</p>
+      </div>
+      <div class="bitacora-frase">
+        <span>Frase del viaje:</span> ¡Tengo hambre!
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFIL -->
+  <div class="profile-overlay" id="profileOverlay">
+    <div class="profile-page">
+      <button class="profile-back" id="profileBack">← Volver</button>
+
+      <div class="profile-header">
+        <span class="profile-tag">Ferreyra · desde 2022</span>
+        <h1 class="profile-title" id="profileName"></h1>
+        <span class="profile-title-bar"></span>
+      </div>
+
+      <div class="profile-hero">
+        <div class="profile-avatar-lg">
+          <img id="profilePhoto" src="" alt="" />
+        </div>
+        <div class="profile-info">
+          <p class="profile-desc" id="profileDesc"></p>
+          <div class="profile-badges">
+            <span class="profile-badge">Aventurero</span>
+            <span class="profile-badge">Buenos Aires</span>
+          </div>
+          <button class="ver-mas-btn" id="verMasBtn">Ver más fotos →</button>
+        </div>
+      </div>
+
+      <div class="profile-divider"></div>
+
+      <div class="profile-viajes">
+        <span class="section-tag">Viajes</span>
+        <div class="profile-viajes-list" id="profileViajesList"></div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- GALERÍA -->
+  <div class="photo-gallery" id="photoGallery">
+    <div class="photo-gallery-page">
+      <button class="profile-back" id="galleryBack">← Volver</button>
+      <h3 class="profile-extra-title" id="galleryTitle"></h3>
+      <div class="photo-gallery-grid" id="photoGalleryGrid"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <span class="footer-logo">FERREYRA</span>
+      <p class="footer-tagline">Un grupo. Muchas aventuras.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Ferreyra · Buenos Aires</span>
+      <span class="footer-origin">Origen: Cuarzo Ferreyra ◈</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
