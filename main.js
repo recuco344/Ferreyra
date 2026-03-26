@@ -195,7 +195,7 @@ verMasBtn.addEventListener('click', () => {
   galleryTitle.textContent = 'Fotos de ' + currentPerson;
   photoGalleryGrid.innerHTML = '';
 
-  const total = data.extra.length > 0 ? data.extra.length : 6;
+  const total = data.extra.length > 0 ? data.extra.length : 12;
   for (let i = 0; i < total; i++) {
     const frame = document.createElement('div');
     frame.className = 'photo-frame';
@@ -203,6 +203,11 @@ verMasBtn.addEventListener('click', () => {
       const img = document.createElement('img');
       img.src = data.extra[i];
       img.alt = currentPerson;
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', () => {
+        lightboxImg.src = data.extra[i];
+        lightbox.classList.add('open');
+      });
       frame.appendChild(img);
     } else {
       frame.innerHTML = '<span>◈</span><p>Foto próximamente</p>';
