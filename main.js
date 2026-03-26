@@ -62,7 +62,7 @@ const viajeCordoba = [{ nombre: 'Córdoba 2023', fecha: 'Jul 2023' }];
 
 const personas = {
   'Yago':  { foto: 'yago foto.png',   desc: 'Descripción próximamente.', extra: [], viajes: viajeTodos },
-  'Seba':  { foto: 'seba foto.jpg',   desc: 'Descripción próximamente.', extra: [], viajes: viajeTodos },
+  'Seba':  { foto: 'seba foto.jpg',   desc: 'Descripción próximamente.', extra: ['Fotos seba/sebafoto1.jpg', 'Fotos seba/sebafoto2.jpg', 'Fotos seba/sebafoto3.jpg', 'Fotos seba/sebafoto4.jpg', 'Fotos seba/sebafoto5.jpg', 'Fotos seba/sebafoto6.jpg'], viajes: viajeTodos },
   'Cami':  { foto: 'cami foto.jpg',   desc: 'Descripción próximamente.', extra: [], viajes: viajeTodos },
   'Feli':  { foto: 'feli foto.jpeg',  desc: 'Descripción próximamente.', extra: [], pos: 'left center', viajes: viajeTodos },
   'Vicen': { foto: 'vicen foto.jpeg', desc: 'Descripción próximamente.', extra: [], pos: '30% center', viajes: viajeTodos },
@@ -119,11 +119,11 @@ document.querySelectorAll('.person-card[data-name]').forEach(card => {
 const viajesData = {
   'cordoba-2023': {
     titulo: 'Córdoba 2023',
-    fotos: ['cuarzo foto 1.jpg', 'puesto ferreyra foto.jpg', '23-1.jpg', '23-2.jpg', '23-4.jpg', '23-5.jpg', '23-6.jpg', '23-7.jpg', '23-8.jpg']
+    fotos: ['Cordoba/cuarzo foto 1.jpg', 'Cordoba/puesto ferreyra foto.jpg', 'Cordoba/23-1.jpg', 'Cordoba/23-2.jpg', 'Cordoba/23-4.jpg', 'Cordoba/23-5.jpg', 'Cordoba/23-6.jpg', 'Cordoba/23-7.jpg', 'Cordoba/23-8.jpg']
   },
   'arenas-2024': {
     titulo: 'Arenas Verdes 2024',
-    fotos: ['24-1.jpg', '24-2.jpg', '24-3.jpg', '24-4.jpg', '24-5.jpg', '24-6.jpg', '24-7.jpg', '24-8.jpg', '24-9.jpg']
+    fotos: ['Arenas verdes/24-1.jpg', 'Arenas verdes/24-2.jpg', 'Arenas verdes/24-3.jpg', 'Arenas verdes/24-4.jpg', 'Arenas verdes/24-5.jpg', 'Arenas verdes/24-6.jpg', 'Arenas verdes/24-7.jpg', 'Arenas verdes/24-8.jpg', 'Arenas verdes/24-9.jpg']
   }
 };
 
@@ -268,4 +268,3 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll, { passive: true });
-  
