@@ -62,7 +62,7 @@ const viajeCordoba = [{ nombre: 'Córdoba 2023', fecha: 'Jul 2023' }];
 
 const personas = {
   'Yago':  { foto: 'yago foto.png',   desc: 'Descripción próximamente.', extra: [], viajes: viajeTodos },
-  'Seba':  { foto: 'seba foto.jpg',   desc: 'Descripción próximamente.', extra: ['Fotos seba/sebafoto1.jpg', 'Fotos seba/sebafoto2.jpg', 'Fotos seba/sebafoto3.jpg', 'Fotos seba/sebafoto4.jpg', 'Fotos seba/sebafoto5.jpg', 'Fotos seba/sebafoto6.jpg'], viajes: viajeTodos },
+  'Seba':  { foto: 'seba foto.jpg',   desc: 'Descripción próximamente.', extra: ['sebafoto1.jpg', 'sebafoto2.jpg', 'sebafoto3.jpg', 'sebafoto4.jpg', 'sebafoto5.jpg', 'sebafoto6.jpg'], viajes: viajeTodos },
   'Cami':  { foto: 'cami foto.jpg',   desc: 'Descripción próximamente.', extra: [], viajes: viajeTodos },
   'Feli':  { foto: 'feli foto.jpeg',  desc: 'Descripción próximamente.', extra: [], pos: 'left center', viajes: viajeTodos },
   'Vicen': { foto: 'vicen foto.jpeg', desc: 'Descripción próximamente.', extra: [], pos: '30% center', viajes: viajeTodos },
@@ -268,4 +268,3 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll, { passive: true });
- 
