@@ -61,13 +61,13 @@ const viajeArenas  = [{ nombre: 'Arenas Verdes 2024', fecha: 'Ene 2024' }];
 const viajeCordoba = [{ nombre: 'Córdoba 2023', fecha: 'Jul 2023' }];
 
 const personas = {
-  'Yago':  { foto: 'yago foto.png',   desc: 'Descripción próximamente.', extra: [], viajes: viajeTodos },
-  'Seba':  { foto: 'seba foto.jpg',   desc: 'Descripción próximamente.', extra: ['sebafoto1.jpg', 'sebafoto2.jpg', 'sebafoto3.jpg', 'sebafoto4.jpg', 'sebafoto5.jpg', 'sebafoto6.jpg'], viajes: viajeTodos },
-  'Cami':  { foto: 'cami foto.jpg',   desc: 'Descripción próximamente.', extra: [], viajes: viajeTodos },
-  'Feli':  { foto: 'feli foto.jpeg',  desc: 'Descripción próximamente.', extra: [], pos: 'left center', viajes: viajeTodos },
-  'Vicen': { foto: 'vicen foto.jpeg', desc: 'Descripción próximamente.', extra: [], pos: '30% center', viajes: viajeTodos },
-  'Toto':  { foto: 'toto foto.jpeg',  desc: 'Descripción próximamente.', extra: [], viajes: viajeArenas },
-  'Juan':  { foto: 'juan foto.jpeg',  desc: 'Descripción próximamente.', extra: [], viajes: viajeArenas },
+  'Yago':  { foto: 'yago foto.png',   desc: 'Descripción próximamente.', extra: ['Fotos yago/yagofoto1.jpg', 'Fotos yago/yagofoto2.jpg', 'Fotos yago/yagofoto3.jpg', 'Fotos yago/yagofoto4.jpg', 'Fotos yago/yagofoto5.jpg', 'Fotos yago/yagofoto6.jpg'], viajes: viajeTodos },
+  'Seba':  { foto: 'seba foto.jpg',   desc: 'Descripción próximamente.', extra: ['Fotos seba/sebafoto1.jpg', 'Fotos seba/sebafoto2.jpg', 'Fotos seba/sebafoto3.jpg', 'Fotos seba/sebafoto4.jpg', 'Fotos seba/sebafoto5.jpg', 'Fotos seba/sebafoto6.jpg', 'Fotos seba/sebafoto7.jpg', 'Fotos seba/sebafoto8.jpg'], viajes: viajeTodos },
+  'Cami':  { foto: 'cami foto.jpg',   desc: 'Descripción próximamente.', extra: ['Fotos cami/camifoto1.jpg', 'Fotos cami/camifoto2.jpg', 'Fotos cami/camifoto3.jpg', 'Fotos cami/camifoto4.jpg', 'Fotos cami/camifoto5.jpg'], viajes: viajeTodos },
+  'Feli':  { foto: 'feli foto.jpeg',  desc: 'Descripción próximamente.', extra: ['Fotos feli/felifoto1.jpg', 'Fotos feli/felifoto2.jpg'], pos: 'left center', viajes: viajeTodos },
+  'Vicen': { foto: 'vicen foto.jpeg', desc: 'Descripción próximamente.', extra: ['Fotos vicen/vicenfoto1.jpg', 'Fotos vicen/vicenfoto2.jpg', 'Fotos vicen/vicenfoto3.jpg', 'Fotos vicen/vicenfoto4.jpg', 'Fotos vicen/vicenfoto5.jpg', 'Fotos vicen/vicenfoto6.jpg'], pos: '30% center', viajes: viajeTodos },
+  'Toto':  { foto: 'toto foto.jpeg',  desc: 'Descripción próximamente.', extra: ['Fotos toto/totofoto1.jpg', 'Fotos toto/totofoto2.jpg'], viajes: viajeArenas },
+  'Juan':  { foto: 'juan foto.jpeg',  desc: 'Descripción próximamente.', extra: ['Fotos juan/juanfoto1.jpg'], viajes: viajeArenas },
   'Yatel': { foto: 'yatel foto.png', desc: 'Del Bolsón.', extra: [], viajes: viajeCordoba, sinGaleria: true },
   'Ciro':  { foto: 'ciro foto.png', desc: 'De Mendoza.', extra: [], viajes: viajeArenas, sinGaleria: true },
 };
