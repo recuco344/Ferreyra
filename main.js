@@ -119,11 +119,11 @@ document.querySelectorAll('.person-card[data-name]').forEach(card => {
 const viajesData = {
   'cordoba-2023': {
     titulo: 'Córdoba 2023',
-    fotos: ['Cordoba/cuarzo foto 1.jpg', 'Cordoba/puesto ferreyra foto.jpg', 'Cordoba/23-1.jpg', 'Cordoba/23-2.jpg', 'Cordoba/23-4.jpg', 'Cordoba/23-5.jpg', 'Cordoba/23-6.jpg', 'Cordoba/23-7.jpg', 'Cordoba/23-8.jpg']
+    fotos: ['cuarzo foto 1.jpg', 'puesto ferreyra foto.jpg', '23-1.jpg', '23-2.jpg', '23-4.jpg', '23-5.jpg', '23-6.jpg', '23-7.jpg', '23-8.jpg']
   },
   'arenas-2024': {
     titulo: 'Arenas Verdes 2024',
-    fotos: ['Arenas verdes/24-1.jpg', 'Arenas verdes/24-2.jpg', 'Arenas verdes/24-3.jpg', 'Arenas verdes/24-4.jpg', 'Arenas verdes/24-5.jpg', 'Arenas verdes/24-6.jpg', 'Arenas verdes/24-7.jpg', 'Arenas verdes/24-8.jpg', 'Arenas verdes/24-9.jpg']
+    fotos: ['24-1.jpg', '24-2.jpg', '24-3.jpg', '24-4.jpg', '24-5.jpg', '24-6.jpg', '24-7.jpg', '24-8.jpg', '24-9.jpg']
   }
 };
 
