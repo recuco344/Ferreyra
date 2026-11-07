@@ -107,6 +107,7 @@ function abrirPerfil(name) {
   verMasBtn.style.display = data.sinGaleria ? 'none' : '';
 
   currentPerson = name;
+  cargarLikes();
   profileOverlay.classList.add('open');
   profileOverlay.scrollTop = 0;
 }
@@ -317,3 +318,69 @@ window.addEventListener('scroll', onScroll, { passive: true });
     if (abierto && Math.abs(window.scrollY - scrollInicial) > 60) cerrar();
   }, { passive: true });
 })();
+
+
+// LIKES DE PERFILES (contador compartido, se actualiza solo cada 8 segundos)
+const LIKES_BASE = 'https://api.counterapi.dev/v1/ferreyra-jumanji';
+const likeBtn   = document.getElementById('likeBtn');
+const likeHeart = document.getElementById('likeHeart');
+const likeCount = document.getElementById('likeCount');
+
+function likeKey(nombre) {
+  return 'likes-' + nombre.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
+}
+function leerLocal(k, def) {
+  try { const v = localStorage.getItem(k); return v === null ? def : v; } catch (e) { return def; }
+}
+function guardarLocal(k, v) {
+  try { localStorage.setItem(k, v); } catch (e) {}
+}
+function pintarLikes() {
+  const k = likeKey(currentPerson);
+  const n = Number(leerLocal('count-' + k, '0')) || 0;
+  const liked = leerLocal('liked-' + k, '0') === '1';
+  likeCount.textContent = n;
+  likeHeart.textContent = liked ? '♥' : '♡';
+  likeBtn.classList.toggle('liked', liked);
+  likeBtn.setAttribute('aria-pressed', liked ? 'true' : 'false');
+}
+async function pedirLikes(ruta) {
+  const r = await fetch(LIKES_BASE + '/' + ruta);
+  if (!r.ok) throw new Error('likes ' + r.status);
+  return r.json();
+}
+async function refrescarLikes() {
+  if (!currentPerson) return;
+  const persona = currentPerson;
+  const k = likeKey(persona);
+  try {
+    const d = await pedirLikes(k + '/');
+    if (typeof d.count === 'number') {
+      guardarLocal('count-' + k, d.count);
+      if (persona === currentPerson) pintarLikes();
+    }
+  } catch (e) { /* sin conexión: se muestra el último número conocido */ }
+}
+function cargarLikes() {
+  pintarLikes();
+  refrescarLikes();
+}
+likeBtn.addEventListener('click', async () => {
+  const persona = currentPerson;
+  const k = likeKey(persona);
+  const liked = leerLocal('liked-' + k, '0') === '1';
+  const n = Math.max(0, (Number(leerLocal('count-' + k, '0')) || 0) + (liked ? -1 : 1));
+  guardarLocal('liked-' + k, liked ? '0' : '1');
+  guardarLocal('count-' + k, n);
+  pintarLikes();
+  try {
+    const d = await pedirLikes(k + '/' + (liked ? 'down' : 'up'));
+    if (typeof d.count === 'number') {
+      guardarLocal('count-' + k, d.count);
+      if (persona === currentPerson) pintarLikes();
+    }
+  } catch (e) {}
+});
+setInterval(() => {
+  if (profileOverlay.classList.contains('open') && !document.hidden) refrescarLikes();
+}, 8000);

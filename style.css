@@ -838,6 +838,7 @@ img { display: block; max-width: 100%; }
   max-width: 860px;
   margin: 0 auto;
   padding: 2.5rem;
+  position: relative;
 }
 
 .profile-back {
@@ -1245,3 +1246,30 @@ img { display: block; max-width: 100%; }
   margin-bottom: 0.4rem;
   font-style: normal;
 }
+
+
+/* Likes en perfiles */
+.like-btn {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: 1px solid var(--ink-faint);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition), transform var(--transition);
+}
+.like-btn .like-heart { font-size: 0.95rem; line-height: 1; }
+.like-btn:hover { color: var(--orange); border-color: var(--orange); }
+.like-btn.liked { color: var(--orange); border-color: var(--orange); }
+.like-btn.liked .like-heart { animation: like-pop 0.35s ease; }
+@keyframes like-pop { 0% { transform: scale(1); } 50% { transform: scale(1.35); } 100% { transform: scale(1); } }
+@media (max-width: 600px) { .like-btn { right: 1.5rem; top: 2.2rem; } }
+
