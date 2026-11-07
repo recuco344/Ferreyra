@@ -273,3 +273,47 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll, { passive: true });
+
+
+// BLOG — abrir y cerrar entradas
+(function () {
+  const posts = document.querySelectorAll('.blog-post');
+  let abierto = null;
+  let scrollInicial = 0;
+
+  function cerrar() {
+    if (!abierto) return;
+    abierto.classList.remove('open');
+    const btn = abierto.querySelector('.blog-read');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.textContent = btn.dataset.label;
+    abierto = null;
+  }
+
+  function abrir(post) {
+    cerrar();
+    post.classList.add('open');
+    const btn = post.querySelector('.blog-read');
+    btn.setAttribute('aria-expanded', 'true');
+    btn.textContent = 'Cerrar ×';
+    abierto = post;
+    scrollInicial = window.scrollY;
+  }
+
+  posts.forEach(post => {
+    const alternar = (e) => {
+      e.stopPropagation();
+      if (post === abierto) cerrar(); else abrir(post);
+    };
+    post.querySelector('.blog-read').addEventListener('click', alternar);
+    post.querySelector('.blog-title').addEventListener('click', alternar);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (abierto && !abierto.contains(e.target)) cerrar();
+  });
+
+  window.addEventListener('scroll', () => {
+    if (abierto && Math.abs(window.scrollY - scrollInicial) > 60) cerrar();
+  }, { passive: true });
+})();
